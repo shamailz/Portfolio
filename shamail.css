@@ -1,0 +1,437 @@
+/*hello future me 
+Do an on click function for the header where on click 
+this the """""windows"""" appear and the text gets bold
+and interally there will be an onclick again for it to
+go away on the "x" out feature and then also a link
+on the "full screen" function 
+set up the link the the js and find a jquery boilerplate
+edit all pictures for the windows
+#f2e9f9;
+#FFEBE5
+#fdeff8*/
+
+
+
+body{
+	background-color: #f9f2fa;
+	overflow-x: hidden;
+	/*#f2ecf6; #f2ecf6 */
+
+}
+
+.shamail{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	background-color: #e5e7f6;
+}
+.website{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	background-color: #e5e7f6;
+	height: 80px;
+}
+.editorial{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	background-color: #e5e7f6;
+	height: 80px;
+}
+.books{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	background-color: #e5e7f6;
+	height: 80px;
+}
+.bookpics{
+	margin-left: 2vw;
+}
+.back{
+	text-align: right;
+	margin-top: -73px;
+}
+.header{
+	background-color: #e5e7f6;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: justify-all;
+	position: fixed;
+	width: 110%;
+	height: 5%;
+	margin-top: -30%;
+	left:-1%;
+
+}
+#first{
+	position: absolute;
+	left: 5%;
+	top: 22%;
+}
+#second{
+	position: absolute;
+	left: 28%;
+	top: 22%;
+}
+#third{
+	position: absolute;
+	left: 54%;
+	top: 22%;
+}
+#fourth{
+	position: absolute;
+	left: 78%;
+	top: 22%;
+}
+#first:hover{
+	font-style: oblique;
+	text-decoration: underline;
+	font-weight: 700;
+}
+#second:hover{
+	font-style: oblique;
+	text-decoration: underline;
+	font-weight: 700;
+}
+#third:hover{
+	font-style: oblique;
+	text-decoration: underline;
+	font-weight: 700;
+}
+#fourth:hover{
+	font-style: oblique;
+	text-decoration: underline;
+	font-weight: 700;
+}
+.main{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 90px;
+	font-weight: 200;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+	position: absolute;
+	top: 47%;
+	left: 20%;
+	right: 20%;
+	text-align: center;
+}
+ .arrow{
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 93%;
+      right: 2%;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 50px solid lightgreen;
+      animation-name: blink;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+ }
+
+.info{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	position: absolute;
+	top: 65%;
+	left: 15%;
+	right: 20%;
+	text-align: center;
+
+}
+
+.info-box{
+	background-color: #dcdff7;
+	position: absolute;
+	top: 105%;
+	margin-bottom: 5%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	height: 95%;
+	width: 95%;
+	left: 2.5%;
+}
+#howto{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-size: 60px;
+	width: 350px;
+	font-weight: 400;	
+	border-bottom: 2px solid;
+	left: 3%;
+}
+#text{
+	margin-top: -.5%;
+	margin-left: 7%;
+	margin-right: 5%;
+	line-height: 70px;
+}
+#ty{
+	text-align: center;
+	font-size: 60px;
+}
+.about{
+	z-index: 10;
+	opacity: 0;
+	margin-top: 30%;
+	margin-left: 50%;
+	height: 50vh;
+	width: 70vh;
+	background-color: #ffb9eb;
+	overflow-y: scroll;
+}
+.imagebox1{
+	opacity: 0;
+	z-index: 11;
+	margin-top: -50%;
+	margin-left: 70%;
+	height: 300px;
+	width: 50vh;
+	background-color: #b9fae5;
+	overflow-y: scroll;
+}
+.imagebox2{
+	opacity: 0;
+	z-index: 12;
+	margin-top: -22%;
+	margin-left: 4%;
+	height: 35vh;
+	width: 80vh;
+	background-color: #c7aeee;
+	overflow-y: scroll;
+}
+.imagebox3{
+	opacity: 0;
+	z-index: 13;
+	margin-top: -10%;
+	margin-left: 2%;
+	height: 70vh;
+	width: 60vh;
+	background-color: #ffa1ad;
+	overflow-y: scroll;
+}
+
+#box1{
+	background-color: red;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	display: inline-block;
+	width: 20px;
+	color: white;
+	z-index: 10;
+	margin-top: -30px;
+}
+#box2{
+	background-color: red;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	width: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}
+#box3{
+	background-color: red;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	width: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}
+#box4{
+	background-color: red;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	width: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}
+#box5{
+	background-color: green;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	display: inline-block;
+	text-decoration: none;
+	margin-left: -4px;
+	width: 20px;
+	color: white;
+	z-index: 10;
+}
+#box6{
+	background-color: green;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	display: inline-block;
+	width: 20px;
+	text-decoration: none;
+	margin-left: -4px;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}
+#box7{
+	background-color: green;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	display: inline-block;
+	width: 20px;
+	text-decoration: none;
+	margin-left: -4px;
+	color: white;
+	text-align: center;
+	z-index: 10;
+}
+#box8{
+	background-color: green;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	width: 20px;
+	display: inline-block;
+	color: white;
+	margin-left: -4px;
+	text-decoration: none;
+	text-align: center;
+	z-index: 10;
+}
+
+a:link , a:visited{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: underline dashed;
+	color: white;
+}
+@keyframes blink{
+  	0%{
+  		opacity: 0;
+  	}
+  	50%{
+  		opacity: 1;
+  	}
+  	100%{
+  		opacity: 0;
+  	}
+
+/*iphones!*/
+
+@media only screen 
+  and (min-device-width: 812px) 
+  and (max-device-width: 375px) { 
+  	
+ .header{
+	background-color: #e5e7f6;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: justify-all;
+	position: fixed;
+	width: 110%;
+	height: 5%;
+	margin-top: 30%;
+	left:-1%;
+
+}
+
+ #howto{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-size: 60px;
+	width: 350px;
+	font-weight: 400;	
+	border-bottom: 2px solid;
+	left: 3%;
+	height: 60vh;
+}
+
+}
+
+/*ipads!*/
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+#howto{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-size: 60px;
+	width: 350px;
+	font-weight: 400;	
+	border-bottom: 2px solid;
+	left: 3%;
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+#howto{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-size: 60px;
+	width: 350px;
+	font-weight: 400;	
+	border-bottom: 2px solid;
+	left: 3%;
+}
+
+}
+
+
+/*bb macs!*/
+
+@media screen and (max-width: 1100px) {
+ 
+#howto{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-size: 30px;
+	width: 350px;
+	font-weight: 400;	
+	border-bottom: 2px solid;
+	left: 3%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
